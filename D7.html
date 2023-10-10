@@ -95,9 +95,10 @@
       */
 
       const addClassToTitle = function () {
-        title.classList.add("myHeading");
+        const title = document.getElementsByTagName("h1")[0];
+        title.className = "myHeading";
       };
-      console.log(addClassToTitle());
+      addClassToTitle();
 
       /* ESERCIZIO 3
          Scrivi una funzione che cambi il testo dei p figli di un div
