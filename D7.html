@@ -85,20 +85,19 @@
          Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
       */
 
-      const title = document.getElementsByTagName("h1")[0];
-      console.log(title);
       const changeTitle = function () {
+        const title = document.getElementsByTagName("h1")[0];
         title.innerText = "Nuovo Titolo";
       };
-
+      changeTitle();
       /* ESERCIZIO 2
          Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
       */
-      title.classList.add("myHeading");
 
       const addClassToTitle = function () {
         title.classList.add("myHeading");
       };
+      console.log(addClassToTitle());
 
       /* ESERCIZIO 3
          Scrivi una funzione che cambi il testo dei p figli di un div
